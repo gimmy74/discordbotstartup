@@ -18,9 +18,20 @@ client.login('<bot.secret.stuff>');
 like i mentioned before Do NOT unDEr AnY cIrCUSTancES gIVe AnY ONE tHIS ToKEN NO ONE!!!
 
 
-# adding commands
+# Adding commands
 
 ok all you did was make youre bot online pfffft.
 
 heres a latacy command
 
+
+```client.on('message', async message => {
+if(message.content === 'gimmy ping')
+        message.channel.send("calculating the ping of the bot....").then(m =>{
+            var ping = m.createdTimestamp - message.createdTimestamp;
+            var clientPing = Math.round(client.pi);
+            m.edit(`tottally not slacking :smile:`).then(msg => msg.edit(`***:ping_pong:*** the bots ping is ${Math.round(client.ws.ping)}ms`)({
+            timeout: 3000
+        }))
+        })
+    });```
