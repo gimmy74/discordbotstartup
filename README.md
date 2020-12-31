@@ -25,7 +25,8 @@ ok all you did was make youre bot online pfffft.
 heres a latacy command
 
 
-```client.on('message', async message => {
+```
+client.on('message', async message => {
 if(message.content === 'gimmy ping')
         message.channel.send("calculating the ping of the bot....").then(m =>{
             var ping = m.createdTimestamp - message.createdTimestamp;
@@ -34,4 +35,5 @@ if(message.content === 'gimmy ping')
             timeout: 3000
         }))
         })
-    });```
+    });
+```
