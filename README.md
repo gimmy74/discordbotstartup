@@ -10,7 +10,7 @@ Do NOT unDEr AnY cIrCUSTancES gIVe AnY ONE tHIS ToKEN NO ONE!!!
 
 Ok, so now put this is youre terminal 
 
-```
+```js
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login('<bot.secret.stuff>');
@@ -25,7 +25,7 @@ ok all you did was make youre bot online pfffft.
 heres a latacy command
 
 
-```
+```js
 client.on('message', async message => {
 if(message.content === 'gimmy ping')
         message.channel.send("calculating the ping of the bot....").then(m =>{
