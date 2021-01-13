@@ -66,4 +66,22 @@ fs.readdir("./commands/", (err, files) => {
     console.log("Loading Command: "+commandName)
   });
 });
+
+client.on('message', message => {
+
+    if (message.author.bot) return;
+    const args = message.content.slice(prefix.length).trim().split(/ +/g)
+    const command = args.shift().toLowerCase();
+    
+    if (message.content.indexOf(prefix) !== 0) return;
+
+    try {
+        let commandFile = require(`./commands/${command}.js`);
+        commandFile.run(client, message, args,)
+    } catch (err) {
+        return;
+    }
+
+
+});
 ```
