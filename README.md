@@ -1,7 +1,7 @@
 # Creating the bot
 Hi, first off what youre gonna want to do create youre bot. Go to https://discord.com/developers/applications and make a new appication, then press "bot" and create a new bot Then copy youre bot secret.
 
-Do NOT unDEr AnY cIrCUSTancES gIVe AnY ONE tHIS ToKEN NO ONE!!!
+Do NOT unDEr AnY cIrCUmSTancES gIVe AnY ONE tHIS ToKEN, NO ONE!!!
 
 
 
